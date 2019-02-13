@@ -1,0 +1,46 @@
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin titulo($size, $color: blue) {
+    font-size: $size;
+    color: $color;
+}
+
+@mixin box-sizing($size){
+    -webkit-box-sizing: $size;
+    -moz-box-sizing: $size;
+    -ms-box-sizing: $size;
+    box-sizing: $size;
+}
+
+.box{
+    @include border-radius(10px);
+}
+
+.box2{
+    @include border-radius($radius: 10px)
+}
+
+h1{
+    @include titulo(14px);
+}
+
+h2{
+    @include titulo(14px, green);
+}
+
+h3{
+    @include titulo($color: yellow, $size: 14px);
+}
+
+.box3{
+    @include box-sizing(12px);
+}
+
+.box4{
+    @include box-sizing($size: 12px);
+}

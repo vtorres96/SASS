@@ -1,0 +1,60 @@
+.msg{
+    border: 1px solid;
+    padding: 4px;
+    text-align: center;
+}
+
+.msg-error{
+    @extend .msg;
+    border-color: #ff0000;
+    color: #ff0000;
+}
+
+.msg-alert{
+    @extend .msg;
+    border-color: #ff8e00;
+    color: #ff8e00;
+}
+
+.msg-sucess{
+    @extend .msg;
+    border-color: #008000;
+    color: #008000;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.hoverLink{
+    @extend a:hover;
+    color: #000;
+}
+
+.error{
+    border: 1px #f00;
+    background-color: #f00; 
+}
+
+.attention{
+    font-size: 3em;
+    background-color: #f00;
+}
+
+.seriousError{
+    @extend .error;
+    @extend .attention;
+    border-width: 3px;
+}
+
+.btn{
+    padding: 2px;
+    border-width: 3px;
+    border-style: dashed;
+    border-radius: 10px;
+  }
+
+  .btn-follow{
+    @extend .btn;
+    color: violet;
+  }

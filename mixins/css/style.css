@@ -1,0 +1,35 @@
+.box {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px; }
+
+.box2 {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px; }
+
+h1 {
+  font-size: 14px;
+  color: blue; }
+
+h2 {
+  font-size: 14px;
+  color: green; }
+
+h3 {
+  font-size: 14px;
+  color: yellow; }
+
+.box3 {
+  -webkit-box-sizing: 12px;
+  -moz-box-sizing: 12px;
+  -ms-box-sizing: 12px;
+  box-sizing: 12px; }
+
+.box4 {
+  -webkit-box-sizing: 12px;
+  -moz-box-sizing: 12px;
+  -ms-box-sizing: 12px;
+  box-sizing: 12px; }

@@ -1,0 +1,12 @@
+$destaque: destaque;
+$border: border;
+
+p.#{destaque}{
+    #{$border}-color: blue;
+}
+
+p{
+    $font-size: 12px;
+    $line-height: 30px;
+    font: #{$font-size}/#{$line-height};
+}

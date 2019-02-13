@@ -1,0 +1,156 @@
+$zero: 0;
+$auto: auto;
+$border-box: border-box;
+$cinquenta: 50%;
+$width: 100%;
+$height: 100%;
+$fafafa: #fafafa;
+$branco: #fff;
+$azul: #3897f0;
+$preto: rgba(0, 0, 0, 0.3);
+
+* {
+    margin: $zero;
+    padding: $zero;
+    -webkit-box-sizing: $border-box;
+    -moz-box-sizing: $border-box;
+    box-sizing: $border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+ul{
+    padding: $zero;
+    margin: $zero;
+}
+
+img{
+    border: $zero;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background: $fafafa;
+}
+
+main{
+    width: 90%;
+    max-width: 935px;
+    margin: $zero $auto;
+}
+
+header{
+    display: flex;
+    margin: 30px 0;
+    flex-flow: column;
+
+    .avatar{
+        -webkit-border-radius: $cinquenta;
+        -moz-border-radius: $cinquenta;
+        border-radius: $cinquenta;
+        margin: $zero $auto;
+    }
+
+    .desc{
+        text-align: center;
+    }
+
+    h1, h2{
+        display: inline-block;
+        margin: 10px 0;
+    }
+
+    h1{
+        font-size: 28px;
+    }
+
+    h2{
+        font-size: 24px;
+    }
+
+    .links{
+        list-style: none;
+        margin: 10px 0;
+
+        li{
+            list-style: none;
+            margin: 0 20px 0 0;
+            display: inline-block;
+        }
+    }
+}
+
+.btn-follow{
+    margin: 0 20px;
+    padding: 6px 14px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: $azul;
+    color: $azul;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+
+    &:hover{
+        background: $azul;
+        color: $fafafa;
+    }
+}
+
+.photos{
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: flex;
+
+    li{
+        width: $width;
+        margin: 20px 0;
+        position: relative;
+
+        img{
+            width: $width;
+        }
+
+        .img-hover{
+            opacity: $zero;
+            position: absolute;
+            top: $zero;
+            left: $zero;
+            width: $width;
+            height: $height;
+            background: $preto;
+            transition: all 0.3s linear;
+        }
+
+        &:hover{
+            .img-hover{
+                opacity: 1;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px){
+    header{
+        flex-flow: row;
+
+        .avatar{
+            margin: 0 40px;
+        }
+
+        .desc{
+            text-align: left;
+        }
+    }
+    .photos{
+        li{
+            width: 30%;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+%center{
+    display: block;
+    margin: 0 auto;
+}
+
+div{
+    @extend %center;
+}
+
+p{
+    @extend %center;
+}
+

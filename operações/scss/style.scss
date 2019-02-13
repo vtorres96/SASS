@@ -1,0 +1,80 @@
+h1{
+    font-size: 5px + 5px;
+    padding: 20px - 10px;
+}
+
+p{
+    font-size: 5px + 3;
+    padding: 10px - 5;
+}
+
+.multiplicacao{
+    font-size: 2px * 2;
+}
+
+.divisao{
+    $width: 1000px;
+    $base-size: 20px;
+    $line-height: 2px;
+    font: 10px/8px bold italic serif;
+    width: $width / 2;
+    padding: round(1.5)/2;
+    height: (500px/2);
+    margin-left: 5px + 8px/2px;
+    font: (italic bold (10px/8px));
+    font-size: #{$base-size} / #{$line-height};
+}
+
+.modulo{
+    $font-size: 27px;
+    font-size: $font-size % 2;
+}
+
+.hexadecimal{
+    color: #010203 + #040506;    
+}
+ 
+.colorHexadecimal{
+    color: #010203 * 2;
+}
+
+.colorRgba{
+    color: rgba(255, 0, 0, 0.75) + rgba(0, 200, 100, 0.75);
+}
+
+.string{
+    color: e + -resize;
+}
+
+.string:before{
+    content: "Eu tenho #{2 + 10} moedas.";
+}
+
+a:before{
+    $null: null;
+    content: "Eu tenho #{$null} moedas.";
+}
+
+//Convertendo pixel para rem, lembrando que 1rem = 16px, e que 1px = 0,625rem;
+$rem: 16;
+$string-rem: rem;
+
+.ex1{
+    $font-size: 12;
+    $line-height: 16;
+    font-size: ($font-size / $rem) + $string-rem;
+    line-height: ($line-height / $rem) + $string-rem;
+}
+.ex2{
+    $font-size: 20;
+    $line-height: 24;
+    font-size: ($font-size / $rem) + $string-rem;
+    line-height: ($line-height / $rem) + $string-rem;
+}
+
+.ex3{
+    $font-size: 28;
+    $line-height: 32;
+    font-size: ($font-size / $rem) + $string-rem;
+    line-height: ($line-height / $rem) + $string-rem;
+}
