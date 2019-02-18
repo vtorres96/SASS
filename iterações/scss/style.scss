@@ -1,0 +1,34 @@
+@for $i from 1 through 3 {
+    .item-#{$i} {
+       width: 2em * $i; 
+    }
+}
+
+@for $i from 1 to 3 {
+    .div-#{$i} {
+       width: 2em * $i; 
+    }
+}
+
+@each $piece in queen, knight, bishop, king {
+    .#{$piece}-icon {
+        background-image: url('/images/#{$piece}.png');
+    }
+}
+
+$animals: dog, cat, fish, pig;
+
+@each $animal in $animals {
+    .#{$animal}-icon {
+        background-image: url('/images/#{$animal}.png');
+    }
+}
+
+$i: 6;
+
+@while $i > 0 {
+    .item-#{$i} {
+        width: 2em * $i;
+    }
+    $i: $i - 2;
+}

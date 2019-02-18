@@ -1,0 +1,25 @@
+header {
+  padding: 3m;
+}
+
+@media (min-width: 768px) {
+  header {
+    padding: 2em;
+  }
+}
+
+@media (min-width: 1024px) {
+  header {
+    padding: 1em;
+  }
+}
+
+.sidebar {
+  width: 40%;
+}
+
+@media screen and (landscape) {
+  .sidebar {
+    width: 30%;
+  }
+}
